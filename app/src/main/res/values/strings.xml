@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Easy Permission</string>
+    <string name="rationale_sms">This app needs access to your sms to read all your great messages.</string>
+    <string name="rationale_question">This app need access</string>
+    <string name="rationale_ask_ok">Ok</string>
+    <string name="rationale_ask_cancel">Cancel</string>
+</resources>

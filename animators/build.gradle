@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release'
+
+android {
+  compileSdkVersion 25
+  buildToolsVersion '25.0.3'
+
+  defaultConfig {
+    minSdkVersion MIN_SDK_VERSION as int
+    targetSdkVersion TARGET_SDK_VERSION as int
+    versionCode 1//"git rev-list origin/master --count".execute().text.toInteger()
+    versionName VERSION_NAME
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+
+dependencies {
+  implementation "com.android.support:support-compat:25.3.1"
+  implementation "com.android.support:support-core-ui:25.3.1"
+  implementation "com.android.support:recyclerview-v7:25.3.1"
+}
+
+//publish {
+//  userOrg = POM_DEVELOPER_ID
+//  groupId = GROUP
+//  artifactId = ARTIFACT_ID
+//  publishVersion = VERSION_NAME
+//  desc = POM_DESCRIPTION
+//  website = POM_URL
+//  bintrayUser = BINTRAY_USER
+//  bintrayKey = BINTRAY_API_KEY
+//  autoPublish = false
+//}
